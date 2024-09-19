@@ -1,5 +1,6 @@
 package com.features.demo;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class FeatureCTest {
@@ -18,5 +19,6 @@ public class FeatureCTest {
     @Test(groups = {"main","blue"})
     public void testC3() {
         System.out.println("testC3 - " + Thread.currentThread());
+        Assert.assertTrue(false);
     }
 }
