@@ -41,4 +41,12 @@ task printSourceSets {
         }
     }
 }
+test {
+    useTestNG() {
+        // Enables the default TestNG report generation
+        useDefaultListeners = true
+    }
+}
+
+
 
